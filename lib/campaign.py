@@ -14,6 +14,7 @@ PARTICIPATION_HEADERS = [
     'operating_country',
     'contact_locale',
     'company_name',
+    'contact_name',
     'created',
     'network_status',
     'campaign_status',
@@ -25,7 +26,7 @@ PARTICIPATION_HEADERS = [
 
 
 def save_publishers(campaign, publishers):
-    with open('out/' + campaign + '_publishers.out', 'a', newline='') as file:
+    with open('out/' + campaign + '_publishers.csv', 'a', newline='') as file:
         campaign_csv = csv.writer(file, delimiter=',')
         for i in publishers:
             row = []
@@ -41,7 +42,7 @@ def publishers(a, url):
 
     api_url = '/campaign/' + a.campaign_id + '/publisher.json'
 
-    with open('out/' + a.campaign_id + '_publishers.out', 'w', newline='') as file:
+    with open('out/' + a.campaign_id + '_publishers.csv', 'w', newline='') as file:
         campaign_csv = csv.writer(file, delimiter=',')
         campaign_csv.writerow(PARTICIPATION_HEADERS)
 
