@@ -37,7 +37,7 @@ def save_publishers(campaign, publishers):
 
 def publishers(a, url):
     if a.campaign_id is None:
-        print('\033[91mYou must provide a Partnerize campaign_id using the -c or --campaign_id flag.\033[91m')
+        print('\033[91mYou must provide a Partnerize campaign_id using the -c or --campaign_id flag.\033[0m')
         sys.exit()
 
     api_url = '/campaign/' + a.campaign_id + '/publisher.json'

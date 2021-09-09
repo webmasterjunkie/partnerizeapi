@@ -19,10 +19,10 @@ class PartnerizeApi:
         if a.application_key is None:
             print(
                 '\033[91mYou must provide a Partnerize application_api_key using the -u or --application_key '
-                'flag.\033[91m')
+                'flag.\033[0m')
             sys.exit()
         if a.user_key is None:
-            print('\033[91mYou must provide a Partnerize user_api using the -p or --user_key flag.\033[91m')
+            print('\033[91mYou must provide a Partnerize user_api using the -p or --user_key flag.\033[0m')
             sys.exit()
 
         return a
