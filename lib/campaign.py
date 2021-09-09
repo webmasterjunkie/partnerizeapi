@@ -2,7 +2,7 @@ import csv
 import json
 import requests
 import sys
-from src.lib.udf import progress_bar
+from lib.udf import progress_bar
 
 PARTICIPATION_HEADERS = [
     'publisher_id',
