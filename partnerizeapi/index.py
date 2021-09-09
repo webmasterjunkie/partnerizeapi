@@ -39,7 +39,7 @@ class PartnerizeApi:
             url = 'https://' + a.subdomain + '-api.partnerize.com'
 
         if a.method == 'publishers':
-            from lib.campaign import publishers
+            from src.lib.campaign import publishers
             publishers(a, url)
 
 

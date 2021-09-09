@@ -1,2 +1,2 @@
-# partnerize-api
-A python library for performing common Partnerize API tasks.
+# Partnerize API
+This is a python package that can be used ti implement some commonly used [Partnerize API](https://api-docs.partnerize.com/) calls.
